@@ -6,7 +6,8 @@ import java.util.Map;
 import java.util.stream.Collectors;
 
 public class Sort_Map_Key_Using_Stream_DESC {
-    //This method is for sort the map based on the key in Ascending order
+    
+    //This method is for sort the map based on the key in descending order
     private static LinkedHashMap<String, Integer> sortMapKeyByDesc(Map<String, Integer> unSortMap) {
         LinkedHashMap<String, Integer> sortMapDesc = unSortMap.entrySet().stream()
                 .sorted(Map.Entry.<String, Integer>comparingByKey().reversed())
