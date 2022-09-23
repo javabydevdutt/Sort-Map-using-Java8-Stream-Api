@@ -6,7 +6,8 @@ import java.util.Map;
 import java.util.stream.Collectors;
 
 public class Sort_Map_Value_Using_Stream_ASC {
-    //This method is for sort the map based on the key in Ascending order
+    
+    //This method is for sort the map based on the value in Ascending order
     private static LinkedHashMap<String, Integer> sortMapValueByAsc(Map<String, Integer> unSortMap) {
         LinkedHashMap<String, Integer> sortMapValueAsc = unSortMap.entrySet().stream()
                 .sorted(Map.Entry.<String, Integer>comparingByValue())
